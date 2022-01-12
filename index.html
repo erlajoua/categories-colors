@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        #text_area {
+            width: 600px;
+            height: 80vh;
+        }
+        .button-categories {
+            padding: 1px 8px 1px 8px;
+            width: 100px;
+            border-radius: 24px;
+            font-size: 18px;
+            border-style: solid;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'Maven Pro', sans-serif;
+            text-align: center;
+        }
+        .myDiv {
+            margin: 10px
+        }
+        #categories {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <textarea id="text_area" name="Text1" cols="100" rows="50">Example1:#ff00ff</textarea>
+        <button id="button">Valider</button>
+    </div>
+    <div id="categories">
+
+    </div>
+    <script>
+        const button = document.getElementById("button");
+        const textarea = document.getElementById("text_area");
+        const categories = document.getElementById("categories");
+        button.addEventListener("click", () => {
+            categories.innerHTML = ''
+            let content = textarea.value.split(/\r?\n/)
+            console.log("content = ", content);
+            content.map((elem, id) => {
+
+                let mydiv = document.createElement("div");
+                mydiv.classList.add('myDiv')
+                categories.appendChild(mydiv)
+
+
+                let splited = elem.split(':');
+                let b = document.createElement("button");
+                b.innerText = splited[0];
+                b.style.borderColor = splited[1];
+                b.style.backgroundColor = '#fff';
+                b.style.color = splited[1];
+                b.classList.add('button-categories')
+
+                let bh = document.createElement("button");
+
+                bh.innerText = splited[0];
+                bh.style.borderColor = splited[1];
+                bh.style.backgroundColor = splited[1];
+                bh.style.color = '#fff'
+                bh.classList.add('button-categories')
+
+                mydiv.appendChild(b)
+                mydiv.appendChild(bh)
+            })
+        });
+    </script>
+</body>
+</html>
