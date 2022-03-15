@@ -1,13 +1,13 @@
-## Categories Colors :art:
+## Categories Colors
 
 ### Description :art:
-Categories colors is a personal project designed for an associative project, a React Native application. Everything is contained in a single html/css/javascript file and is deployed via Github Pages on this link.
+Categories colors is a personal tool designed for an associative project, a React Native application. Everything is contained in a single html/css/javascript file and is deployed via Github Pages on this [link](https://erlajoua.github.io/categories-colors/){:target="_blank"}.
 
 ### Main purpose :page_facing_up:
 On my application, the categories are displayed as "Chips", I needed to have an overview of these different Chips according to their color and their name.
 
 ### How to use :rocket:
-Visit the website on the Github Page [here](https://erlajoua.github.io/categories-colors/), you must fill in the left field according to this format 
+Visit the website on the Github Page [here](https://erlajoua.github.io/categories-colors/){:target="_blank"}, you must fill in the left field according to this format 
 `Name:#Color`
 Once filled, click on **Tester** and observe the result on the right.
 
