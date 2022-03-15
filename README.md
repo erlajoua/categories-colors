@@ -1,7 +1,7 @@
 ## Categories Colors :art:
 
 ### Description :art:
-Categories categories is a personal project designed for an associative project, a React Native application. Everything is contained in a single html/css/javascript file and is deployed via Github Pages on this link.
+Categories colors is a personal project designed for an associative project, a React Native application. Everything is contained in a single html/css/javascript file and is deployed via Github Pages on this link.
 
 ### Main purpose :page_facing_up:
 On my application, the categories are displayed as "Chips", I needed to have an overview of these different Chips according to their color and their name.
