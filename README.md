@@ -1,6 +1,6 @@
 ## Categories Colors
 
-### Description :art:
+### Description :sparkles:
 Categories colors is a personal tool designed for an associative project, a React Native application. Everything is contained in a single html/css/javascript file and is deployed via Github Pages on this [link](https://erlajoua.github.io/categories-colors/).
 
 ### Main purpose :page_facing_up:
